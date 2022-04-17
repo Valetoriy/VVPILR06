@@ -31,18 +31,18 @@ auto MyWidget::slotStrClr() -> void {
 }
 
 MyWidget::MyWidget()
-    : sqr_in(std::make_unique<QLineEdit>(this)),
-      sqr_out(std::make_unique<QLineEdit>(this)),
-      b_sqr(std::make_unique<QPushButton>("*", this)),
-      b_sqr_clr(std::make_unique<QPushButton>("C", this)),
-      lab_sqr_is(std::make_unique<QLabel>("^2=", this)),
+    : sqr_in{std::make_unique<QLineEdit>(this)},
+      sqr_out{std::make_unique<QLineEdit>(this)},
+      b_sqr{std::make_unique<QPushButton>("*", this)},
+      b_sqr_clr{std::make_unique<QPushButton>("C", this)},
+      lab_sqr_is{std::make_unique<QLabel>("^2=", this)},
 
-      str_in(std::make_unique<QLineEdit>(this)),
-      ind_in(std::make_unique<QLineEdit>(this)),
-      str_out(std::make_unique<QLineEdit>(this)),
-      b_str(std::make_unique<QPushButton>("Apply", this)),
-      b_str_clr(std::make_unique<QPushButton>("C", this)),
-      lab_str_is(std::make_unique<QLabel>("=>", this)) {
+      str_in{std::make_unique<QLineEdit>(this)},
+      ind_in{std::make_unique<QLineEdit>(this)},
+      str_out{std::make_unique<QLineEdit>(this)},
+      b_str{std::make_unique<QPushButton>("Apply", this)},
+      b_str_clr{std::make_unique<QPushButton>("C", this)},
+      lab_str_is{std::make_unique<QLabel>("=>", this)} {
     this->resize(375, 300);
 
     sqr_in->move(60, 30);
