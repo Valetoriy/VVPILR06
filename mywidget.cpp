@@ -43,7 +43,7 @@ MyWidget::MyWidget()
       b_str(std::make_unique<QPushButton>("Apply", this)),
       b_str_clr(std::make_unique<QPushButton>("C", this)),
       lab_str_is(std::make_unique<QLabel>("=>", this)) {
-    this->resize(300, 150);
+    this->resize(375, 300);
 
     sqr_in->move(60, 30);
     sqr_in->resize(70, 20);
