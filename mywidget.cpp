@@ -3,11 +3,10 @@
 MyWidget::~MyWidget() {}
 
 auto MyWidget::slotSqr() -> void {
-    double d;
     QString tmp;
+    double d = sqr_in->text().toDouble();
+    d *= d;
 
-    d = sqr_in->text().toDouble();
-    d = d * d;
     sqr_out->setText(tmp.setNum(d));
 }
 
